@@ -9,5 +9,5 @@
 if ( ! defined( 'ABSPATH' ) ) {exit;}
 ?>
 
-<?php if ( !function_exists('Header') || !dynamic_sidebar('Header') ) : ?>
+<?php if ( !function_exists('header') || !dynamic_sidebar('header') ) : ?>
 <?php endif;?>

@@ -6,6 +6,14 @@ if (!defined('ABSPATH')) {exit;}
 
 final class BB_Child_OCEANWP_Theme_Class {
 
+    /** ========================================================================
+     * PROPERTIES
+     */
+
+    /** ========================================================================
+     * METHODS
+     */
+
     /** ------------------------------------------------------------------------
      * Constructor
      *
@@ -27,6 +35,7 @@ final class BB_Child_OCEANWP_Theme_Class {
         register_sidebar(
             [
                 'name'          => 'Header',
+                'id'            => 'header',
                 'before_widget' => '<div class="header-widget-area">',
                 'after_widget'  => '</div>',
                 'before_title'  => '<h3>',
@@ -34,6 +43,10 @@ final class BB_Child_OCEANWP_Theme_Class {
             ]
         );
     }
+
+    /** ========================================================================
+     * End of Class
+     */
 }
 
 new BB_Child_OCEANWP_Theme_Class;
