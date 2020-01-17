@@ -65,8 +65,6 @@ $classes = implode( ' ', $classes ); ?>
 <div id="site-header-inner" class="<?php echo esc_attr( $classes ); ?>">
 
     <?php get_template_part( 'partials/header/logo' ); ?>
-    
-    <?php get_template_part( 'partials/header/widget' ); ?>
 
     <?php
     // If template
@@ -97,6 +95,8 @@ $classes = implode( ' ', $classes ); ?>
     } else { ?>
 
         <?php get_template_part( 'partials/header/nav' ); ?>
+        
+        <?php get_template_part( 'partials/header/widget' ); ?>
 
         <?php
         // Search form
