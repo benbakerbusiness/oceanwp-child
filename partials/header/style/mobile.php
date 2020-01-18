@@ -9,4 +9,6 @@
 if ( ! defined( 'ABSPATH' ) ) {exit;}
 ?>
 
- <?php dynamic_sidebar('bb-header-mobile'); ?>
+<div class="bb-header-mobile">
+    <?php dynamic_sidebar('bb-header-mobile'); ?>
+</div>
