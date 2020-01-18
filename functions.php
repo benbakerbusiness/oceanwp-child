@@ -31,24 +31,36 @@ final class BB_Child_OCEANWP_Theme_Class {
      */
     public static function register_sidebars() {
 
-        // Header
+        // Header: Desktop
         register_sidebar(
             [
-                'name'          => 'Header',
-                'id'            => 'bb-header',
-                'before_widget' => '<div class="header-widget-area">',
+                'name'          => 'Header: Desktop',
+                'id'            => 'bb-header-desktop',
+                'before_widget' => '<div class="bb-widget-area-header-desktop">',
                 'after_widget'  => '</div>',
                 'before_title'  => '<h3>',
                 'after_title'   => '</h3>',
             ]
         );
 
-        // Header Mobile
+        // Header: Mobile (Logged In)
         register_sidebar(
             [
-                'name'          => 'Header Mobile',
-                'id'            => 'bb-header-mobile',
-                'before_widget' => '<div class="header-mobile-widget-area">',
+                'name'          => 'Header: Mobile (Logged In)',
+                'id'            => 'bb-header-mobile-logged-in',
+                'before_widget' => '<div class="bb-widget-area-header-mobile  bb-widget-area-header-mobile-logged-in">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h3>',
+                'after_title'   => '</h3>',
+            ]
+        );
+
+        // Header: Mobile (Logged Out)
+        register_sidebar(
+            [
+                'name'          => 'Header: Mobile (Logged Out)',
+                'id'            => 'bb-header-mobile-logged-out',
+                'before_widget' => '<div class="bb-widget-area-header-mobile  bb-widget-area-header-mobile-logged-out">',
                 'after_widget'  => '</div>',
                 'before_title'  => '<h3>',
                 'after_title'   => '</h3>',
