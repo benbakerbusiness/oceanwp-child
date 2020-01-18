@@ -30,11 +30,7 @@
 
 			<?php do_action( 'ocean_header' ); ?>
             
-            <div>
-                <button class="ocs-trigger ocs-toggle ocs-toggle-left">l</button>
-                <?php get_template_part( 'partials/header/logo' ); ?>
-                <button class="ocs-trigger ocs-toggle ocs-toggle-right">r</button>
-            </div>
+            <?php //get_template_part( 'partials/header/style/mobile' ); ?>
 
 			<?php do_action( 'ocean_before_main' ); ?>
 			
