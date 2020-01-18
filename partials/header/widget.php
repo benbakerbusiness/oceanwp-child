@@ -9,5 +9,4 @@
 if ( ! defined( 'ABSPATH' ) ) {exit;}
 ?>
 
-<?php if ( !function_exists('header') || !dynamic_sidebar('header') ) : ?>
-<?php endif;?>
+<?php dynamic_sidebar('bb-header'); ?>

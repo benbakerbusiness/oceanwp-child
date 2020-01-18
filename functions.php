@@ -35,8 +35,20 @@ final class BB_Child_OCEANWP_Theme_Class {
         register_sidebar(
             [
                 'name'          => 'Header',
-                'id'            => 'header',
+                'id'            => 'bb-header',
                 'before_widget' => '<div class="header-widget-area">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h3>',
+                'after_title'   => '</h3>',
+            ]
+        );
+
+        // Header Mobile
+        register_sidebar(
+            [
+                'name'          => 'Header Mobile',
+                'id'            => 'bb-header-mobile',
+                'before_widget' => '<div class="header-mobile-widget-area">',
                 'after_widget'  => '</div>',
                 'before_title'  => '<h3>',
                 'after_title'   => '</h3>',

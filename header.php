@@ -30,7 +30,7 @@
 
 			<?php do_action( 'ocean_header' ); ?>
             
-            <?php //get_template_part( 'partials/header/style/mobile' ); ?>
+            <?php get_template_part( 'partials/header/style/mobile' ); ?>
 
 			<?php do_action( 'ocean_before_main' ); ?>
 			
