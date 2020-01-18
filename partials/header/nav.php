@@ -70,7 +70,7 @@ if ( ! empty( $template ) ) {
 	<?php
 	// If is not full screen header style
 	if ( 'full_screen' != $header_style ) { ?>
-	    <?php dynamic_sidebar('bb-header'); ?>
+	    <?php dynamic_sidebar('bb-header-desktop'); ?>
 		</div><!-- #site-navigation-wrap -->
 	<?php } ?>
 
@@ -190,7 +190,7 @@ else {
 		<?php
 		// If is not full screen header style
 		if ( 'full_screen' != $header_style ) { ?>
-		    <?php dynamic_sidebar('bb-header'); ?>
+		    <?php dynamic_sidebar('bb-header-desktop'); ?>
 			</div><!-- #site-navigation-wrap -->
 		<?php } ?>
 
