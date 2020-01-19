@@ -1,0 +1,16 @@
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.bb-header-mobile {
+    height: 40px;
+}
+
+.bb-sticky {
+    position: fixed !important;
+    top     : 0 !important;
+    width   : 100% !important;
+    z-index : 10 !important;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.bb-sticky + #ocs-site {
+    padding-top: 40px;
+}

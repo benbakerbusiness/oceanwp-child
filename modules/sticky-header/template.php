@@ -9,7 +9,7 @@
 if ( ! defined( 'ABSPATH' ) ) {exit;}
 ?>
 
-<div class="bb-header-mobile">
+<div id="bb-site-header-sticky" class="bb-header-mobile">
     <?php if(is_user_logged_in()) : ?>
         <?php dynamic_sidebar('bb-header-mobile-logged-in'); ?>
     <?php else: ?>

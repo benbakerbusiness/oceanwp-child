@@ -16,6 +16,8 @@
 
 <body <?php body_class(); ?>>
 
+	<?php get_template_part( 'modules/sticky-header/template' ); ?>
+
     <?php do_action('website_before'); ?>
 
 	<?php do_action( 'ocean_before_outer_wrap' ); ?>
@@ -29,8 +31,6 @@
 			<?php do_action( 'ocean_top_bar' ); ?>
 
 			<?php do_action( 'ocean_header' ); ?>
-            
-            <?php get_template_part( 'partials/header/style/mobile' ); ?>
 
 			<?php do_action( 'ocean_before_main' ); ?>
 			
